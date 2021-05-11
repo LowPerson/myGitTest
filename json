@@ -1,0 +1,28 @@
+{
+      "versionMatched" : "false"
+   ,  "patchAction" : [
+         {
+               "version" : "1.0.1"
+            ,  "actions" : [   
+                     {
+                           "action" : "download"
+                        ,  "path" : "https://server/app/patch-1.0.1.zip"
+                     }
+                  ,  {
+                           "action" : "unzip_to_temp"
+                        ,  "path" : "./temp/patch-1.0.1"
+                     }
+                  ,  {
+                           "action" : "overwrite_from_temp"
+                     }
+                  ,  {
+                           "action" : "delete_local_file"
+                        ,  "path" : "./appLib/a.jar"
+                     }
+                  ,  {
+                           "action" : "update_local_version"
+                     }
+               ]
+         }
+      ]
+}
